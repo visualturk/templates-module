@@ -1,3 +1,3 @@
 # Templates Module
 
-Email template management.
+Email templates management.
