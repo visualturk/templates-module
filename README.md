@@ -1,2 +1,3 @@
-# templates-module
+# Templates Module
+
 Email template management.
