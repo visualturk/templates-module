@@ -2,7 +2,12 @@
     "name": "anomaly/templates-module",
     "type": "streams-addon",
     "description": "Email templates management.",
-    "keywords": ["streams-addon", "templates", "pyrocms", "laravel"],
+    "keywords": [
+        "streams-addon",
+        "templates",
+        "pyrocms",
+        "laravel"
+    ],
     "homepage": "http://anomaly.is/",
     "license": "MIT",
     "authors": [

@@ -19,4 +19,5 @@ class TemplatesModule extends Module
      * @var null
      */
     protected $navigation = 'streams::navigation.structure';
+
 }
