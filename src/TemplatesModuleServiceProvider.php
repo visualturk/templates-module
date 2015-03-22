@@ -13,4 +13,13 @@ use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
 class TemplatesModuleServiceProvider extends AddonServiceProvider
 {
 
+    /**
+     * The addon routes.
+     *
+     * @var array
+     */
+    protected $routes = [
+        'admin/templates' => 'Anomaly\TemplatesModule\Http\Controller\Admin\TemplatesController@index'
+    ];
+
 }
