@@ -14,10 +14,10 @@ class TemplatesModule extends Module
 {
 
     /**
-     * The module's navigation group.
+     * The module icon.
      *
-     * @var null
+     * @var string
      */
-    protected $navigation = 'streams::navigation.structure';
+    protected $icon = 'newspaper';
 
 }
