@@ -18,7 +18,12 @@ class AnomalyModuleTemplates_1_0_0_CreateTemplatesFields extends Migration
      * @var array
      */
     protected $fields = [
-        'body' => 'anomaly.field_type.wysiwyg'
+        'name'        => 'anomaly.field_type.text',
+        'description' => 'anomaly.field_type.textarea',
+        'subject'     => 'anomaly.field_type.text',
+        'body'        => 'anomaly.field_type.wysiwyg',
+        'to'          => 'anomaly.field_type.email',
+        'from'        => 'anomaly.field_type.email'
     ];
 
 }

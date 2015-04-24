@@ -40,6 +40,7 @@ class TemplatesModuleServiceProvider extends AddonServiceProvider
      * @var array
      */
     protected $singletons = [
+        'Anomaly\TemplatesModule\Template\TemplateMailer'                       => 'Anomaly\TemplatesModule\Template\TemplateMailer',
         'Anomaly\TemplatesModule\Template\Contract\TemplateRepositoryInterface' => 'Anomaly\TemplatesModule\Template\TemplateRepository'
     ];
 
