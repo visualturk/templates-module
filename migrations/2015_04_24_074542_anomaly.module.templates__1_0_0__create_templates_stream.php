@@ -30,7 +30,8 @@ class AnomalyModuleTemplates_1_0_0_CreateTemplatesStream extends Migration
      */
     protected $assignments = [
         'body' => [
-            'required' => true
+            'translatable' => true,
+            'required'     => true
         ]
     ];
 
