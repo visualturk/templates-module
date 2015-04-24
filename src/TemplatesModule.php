@@ -18,6 +18,6 @@ class TemplatesModule extends Module
      *
      * @var string
      */
-    protected $icon = 'newspaper';
+    protected $icon = 'order';
 
 }

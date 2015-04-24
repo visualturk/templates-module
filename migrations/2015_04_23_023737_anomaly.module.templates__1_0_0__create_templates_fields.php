@@ -17,6 +17,13 @@ class AnomalyModuleTemplates_1_0_0_CreateTemplatesFields extends Migration
      *
      * @var array
      */
-    protected $fields = [];
+    protected $fields = [
+        'body' => [
+            'type'   => 'anomaly.field_type.editor',
+            'config' => [
+                'mode' => 'twig'
+            ]
+        ]
+    ];
 
 }
