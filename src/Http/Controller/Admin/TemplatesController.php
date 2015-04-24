@@ -1,6 +1,8 @@
 <?php namespace Anomaly\TemplatesModule\Http\Controller\Admin;
 
 use Anomaly\Streams\Platform\Http\Controller\AdminController;
+use Anomaly\TemplatesModule\Template\Form\TemplateFormBuilder;
+use Anomaly\TemplatesModule\Template\Table\TemplateTableBuilder;
 
 /**
  * Class TemplatesController
@@ -13,8 +15,37 @@ use Anomaly\Streams\Platform\Http\Controller\AdminController;
 class TemplatesController extends AdminController
 {
 
-    public function index()
+    /**
+     * Return an index of existing templates.
+     *
+     * @param TemplateTableBuilder $table
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function index(TemplateTableBuilder $table)
     {
-        return 'Test';
+        return $table->render();
+    }
+
+    /**
+     * Return a form for a new template.
+     *
+     * @param TemplateFormBuilder $form
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function create(TemplateFormBuilder $form)
+    {
+        return $form->render();
+    }
+
+    /**
+     * Return a form for an existing template.
+     *
+     * @param TemplateFormBuilder $form
+     * @param                     $id
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function edit(TemplateFormBuilder $form, $id)
+    {
+        return $form->render($id);
     }
 }

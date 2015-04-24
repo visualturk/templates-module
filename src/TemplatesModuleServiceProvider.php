@@ -19,7 +19,28 @@ class TemplatesModuleServiceProvider extends AddonServiceProvider
      * @var array
      */
     protected $routes = [
-        'admin/templates' => 'Anomaly\TemplatesModule\Http\Controller\Admin\TemplatesController@index'
+        'admin/templates'           => 'Anomaly\TemplatesModule\Http\Controller\Admin\TemplatesController@index',
+        'admin/templates/create'    => 'Anomaly\TemplatesModule\Http\Controller\Admin\TemplatesController@create',
+        'admin/templates/edit/{id}' => 'Anomaly\TemplatesModule\Http\Controller\Admin\TemplatesController@edit'
+    ];
+
+    /**
+     * The addon bindings.
+     *
+     * @var array
+     */
+    protected $bindings = [
+        'Anomaly\TemplatesModule\Template\TemplateModel'                        => 'Anomaly\TemplatesModule\Template\TemplateModel',
+        'Anomaly\Streams\Platform\Model\Templates\TemplatesTemplatesEntryModel' => 'Anomaly\TemplatesModule\Template\TemplateModel'
+    ];
+
+    /**
+     * The addon singletons.
+     *
+     * @var array
+     */
+    protected $singletons = [
+        'Anomaly\TemplatesModule\Template\Contract\TemplateRepositoryInterface' => 'Anomaly\TemplatesModule\Template\TemplateRepository'
     ];
 
 }

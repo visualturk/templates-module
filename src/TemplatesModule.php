@@ -20,4 +20,17 @@ class TemplatesModule extends Module
      */
     protected $icon = 'order';
 
+    /**
+     * The module sections.
+     *
+     * @var array
+     */
+    protected $sections = [
+        'templates' => [
+            'buttons' => [
+                'new_template'
+            ]
+        ]
+    ];
+
 }
